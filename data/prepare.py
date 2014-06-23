@@ -16,8 +16,8 @@ SCREEN_RECT = SCREEN.get_rect()
 
 FONTS = tools.load_all_fonts(os.path.join("resources", "fonts"))
 MUSIC = tools.load_all_music(os.path.join("resources", "music"))
-SFX   = tools.load_all_sfx(os.path.join("resources", "sound"))
-GFX   = tools.load_all_gfx(os.path.join("resources", "graphics"))
+#SFX   = tools.load_all_sfx(os.path.join("resources", "sound"))
+#GFX   = tools.load_all_gfx(os.path.join("resources", "graphics"))
 
 for direct in [("up", 90), ("left", 180), ("down", 270)]:
     GFX["fish" + direct[0]] = pg.transform.rotate(GFX["fishright"], direct[1])
